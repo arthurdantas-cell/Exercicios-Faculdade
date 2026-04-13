@@ -1,6 +1,6 @@
 /*
  * Monitor de Estudo Mensal
- * DescriÁ„o: Registra horas de estudo di·rias durante 4 semanas, calcula mÈdias 
+ * Descri√ß√£o: Registra horas de estudo di√°rias durante 4 semanas, calcula m√©dias 
  * e identifica os recordes (maior e menor tempo).
  */
 #include <stdio.h>
@@ -23,12 +23,12 @@ int main(void) {
 
             if (horas == -1) {
                 diasContabilizados--;
-                continue; // Pula para o prÛximo dia
+                continue; // Pula para o pr√≥ximo dia
             }
 
             totalSemana += horas;
 
-            // LÛgica para encontrar o maior e menor tempo
+            // L√≥gica para encontrar o maior e menor tempo
             if (horas > 0) {
                 if (horas > maiorHora) {
                     maiorHora = horas;
