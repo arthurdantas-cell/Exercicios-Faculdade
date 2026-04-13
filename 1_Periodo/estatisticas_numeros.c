@@ -1,10 +1,10 @@
 /*
  * Analisador de Conjunto de Dados
- * Descrição: Lê 10 números e calcula soma, média, os dois maiores, 
+ * DescriÃ§Ã£o: LÃª 10 nÃºmeros e calcula soma, mÃ©dia, os dois maiores, 
  * os dois menores e a contagem de paridade.
  */
 #include <stdio.h>
-#include <limits.h> // Necessário para usar INT_MIN e INT_MAX
+#include <limits.h> // NecessÃ¡rio para usar INT_MIN e INT_MAX
 
 int main() {
     int v, i;
@@ -15,7 +15,7 @@ int main() {
     printf("Digite 10 numeros inteiros:\n");
 
     for (i = 1; i <= 10; i++) {
-        printf("%dº numero: ", i);
+        printf("%dÂº numero: ", i);
         scanf("%d", &v);
 
         soma += v;
@@ -24,7 +24,7 @@ int main() {
         if (v % 2 == 0) pares++;
         else impares++;
 
-        // Lógica para Maior e Segundo Maior
+        // LÃ³gica para Maior e Segundo Maior
         if (v > maior) {
             segMaior = maior;
             maior = v;
@@ -32,7 +32,7 @@ int main() {
             segMaior = v;
         }
 
-        // Lógica para Menor e Segundo Menor
+        // LÃ³gica para Menor e Segundo Menor
         if (v < menor) {
             segMenor = menor;
             menor = v;
