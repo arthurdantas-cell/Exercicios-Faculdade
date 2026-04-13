@@ -1,7 +1,7 @@
 /*
- * Validador de Códigos para Sorteio
- * Descrição: Filtra números em um intervalo baseado em propriedades matemáticas 
- * (múltiplos de 4 ou 6 e paridade da soma dos dígitos).
+ * Validador de CÃ³digos para Sorteio
+ * DescriÃ§Ã£o: Filtra nÃºmeros em um intervalo baseado em propriedades matemÃ¡ticas 
+ * (mÃºltiplos de 4 ou 6 e paridade da soma dos dÃ­gitos).
  */
 #include <stdio.h>
 
@@ -20,18 +20,18 @@ int main() {
         printf("\nCodigos Validados:\n");
         for (i = x; i <= y; i++) {
             
-            // Regra 1: Múltiplo de 4 OU 6, mas não de ambos (Operador XOR lógico)
+            // Regra 1: MÃºltiplo de 4 OU 6, mas nÃ£o de ambos (Operador XOR lÃ³gico)
             if ((i % 4 == 0) != (i % 6 == 0)) {
                 int numAux = i;
                 int somaDigitos = 0;
 
-                // Regra 2: Cálculo da soma dos dígitos
+                // Regra 2: CÃ¡lculo da soma dos dÃ­gitos
                 while (numAux > 0) {
                     somaDigitos += numAux % 10;
                     numAux /= 10;
                 }
 
-                // Regra 3: Soma dos dígitos deve ser ímpar
+                // Regra 3: Soma dos dÃ­gitos deve ser Ã­mpar
                 if (somaDigitos % 2 != 0) {
                     printf(" -> %i\n", i);
                     qtdValidos++;
@@ -44,7 +44,7 @@ int main() {
             }
         }
 
-        // Exibição dos resultados estatísticos
+        // ExibiÃ§Ã£o dos resultados estatÃ­sticos
         if (qtdValidos > 0) {
             printf("\n--- RESULTADOS ---");
             printf("\nTotal encontrados: %i", qtdValidos);
