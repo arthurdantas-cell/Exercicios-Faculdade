@@ -1,7 +1,7 @@
 /*
- * Decomposição em Fatores Primos
- * Descrição: Recebe um número inteiro e exibe sua fatoração em primos
- * utilizando notação de potência (ex: 2^3 x 3^1).
+ * DecomposiÃ§Ã£o em Fatores Primos
+ * DescriÃ§Ã£o: Recebe um nÃºmero inteiro e exibe sua fatoraÃ§Ã£o em primos
+ * utilizando notaÃ§Ã£o de potÃªncia (ex: 2^3 x 3^1).
  */
 #include <stdio.h>
 
@@ -25,7 +25,7 @@ int main() {
     while (n > 1) {
         contador = 0;
 
-        // Enquanto o divisor atual dividir n, incrementa a potência
+        // Enquanto o divisor atual dividir n, incrementa a potÃªncia
         while (n % divisor == 0) {
             n /= divisor;
             contador++;
