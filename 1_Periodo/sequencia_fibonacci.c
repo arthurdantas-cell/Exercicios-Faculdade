@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/* * Objetivo: Gerar a Sequência de Fibonacci até um termo N.
- * Complexidade de Tempo: O(n) - Execução linear e eficiente.
- * Complexidade de Espaço: O(1) - Uso otimizado de memória (apenas 3 variáveis).
+/* * Objetivo: Gerar a SequÃªncia de Fibonacci atÃ© um termo N.
+ * Complexidade de Tempo: O(n) - ExecuÃ§Ã£o linear e eficiente.
+ * Complexidade de EspaÃ§o: O(1) - Uso otimizado de memÃ³ria (apenas 3 variÃ¡veis).
  */
 
 void gerarFibonacci(int n) {
